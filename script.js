@@ -1,7 +1,7 @@
 const container = document.querySelector('#container');
 let rowCount = 0
 let boxCount = 0
-let gridSize = 4
+let gridSize = 16
 
 while (rowCount < gridSize) {
     const row = document.createElement('div');
@@ -19,7 +19,7 @@ while (rowCount < gridSize) {
 
 const boxes = document.querySelectorAll('.box')
 boxes.forEach((box => {
-    box.addEventListener('click', function() {
+    box.addEventListener('mouseover', function() {
         box.classList.add('red');
     });
 }));
