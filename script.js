@@ -1,5 +1,5 @@
-const container = document.querySelector('#container'); 
-const reset = document.querySelector('button');
+const container = document.querySelector('#container'); // adds container to variable
+const reset = document.querySelector('button'); // add button to variable
 let rowCount = 0
 let boxCount = 0
 
@@ -34,7 +34,10 @@ function resetGrid() {
         container.removeChild(row);
         }))
     let x = prompt('How many grids would you like to play with?');
+    while (x >= 100 || x <= 0) {
+        x = prompt('Try again')
+    }
     drawGrid(x)
-    };
+};
 
 reset.addEventListener('click', resetGrid);
