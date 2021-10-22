@@ -17,10 +17,10 @@ while (rowCount < gridSize) {
     boxCount = 0
 };
 
-// const boxes = document.querySelectorAll('.box')
-// boxes.forEach((box => {
-//     box.addEventListener('click', function() {
-//         box.classList.add('red');
-//     });
-// }));
+const boxes = document.querySelectorAll('.box')
+boxes.forEach((box => {
+    box.addEventListener('click', function() {
+        box.classList.add('red');
+    });
+}));
 
