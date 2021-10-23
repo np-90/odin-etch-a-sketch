@@ -3,11 +3,14 @@ body {
 }
 
 #container {
-    width: 660px;
-    height: 660px;
+    width: 760px;
+    height: 760px;
     display: flex;
     margin: 0 auto;
     background-color: #eee;
+    border-width: 4px;
+    border-style: solid;
+    border-color: brown;
 }
 
 .row {
@@ -26,6 +29,7 @@ width: 100%;
 
 .used {
     background-color: brown;
+    background-color: rgb(185, 117, 58);
 }
 
 h1 {
