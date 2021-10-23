@@ -3,6 +3,8 @@ const reset = document.querySelector('button'); // add button to variable
 let rowCount = 0
 let boxCount = 0
 
+
+       
 function drawGrid(gridSize) {
 while (rowCount < gridSize) {
     const row = document.createElement('div');
@@ -21,12 +23,10 @@ rowCount = 0
 const boxes = document.querySelectorAll('.box')
 boxes.forEach((box => {
     box.addEventListener('mouseover', function() {
-        box.classList.add('red');
+        box.classList.add('used');
     });
 }));
 }
-
-drawGrid(16)
 
 function resetGrid() {
     const rows = document.querySelectorAll('.row')
@@ -39,5 +39,7 @@ function resetGrid() {
     }
     drawGrid(x)
 };
+
+drawGrid(16)
 
 reset.addEventListener('click', resetGrid);
